@@ -1,5 +1,6 @@
-# Reflections-of-Shadows
-The official repository for Reflections of Shadows. 
-All the changes will be mentioned in the #github-link channel on our Discord server.
+# Reflections of Shadows
+Это наш официальный репозиторий, именно в нём будет проходить вся программистская деятельность. 
+Имейте ввиду, что все изменения репозитория отображаются в канале*#github-link*
+на нашем сервере Discord.
 
-Please note that all the hometask materials should go directly to this branch.
+Данная ветка будет использоваться исключительно для курса по Unity и C#.
