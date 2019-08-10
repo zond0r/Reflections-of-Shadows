@@ -22,25 +22,59 @@ public class CharControls : MonoBehaviour
 
     void Update()
     {
-        if (move.x > 10) move.x = 10;
-        else if(move.x < -10) move.x = -10;
+        if (move.x > 10)
+        {
+            move.x = 10;
+        }
+        else if (move.x < -10)
+        {
+            move.x = -10;
+        }
 
-        if (move.y > 10) move.y = 10;
-        else if(move.y < -10) move.y = -10;
+        if (move.y > 10)
+        {
+            move.y = 10;
+        }
+        else if (move.y < -10)
+        {
+            move.y = -10;
+        }
 
-        if (speed > 10) speed = 10;
-        else if (speed < 0) speed = 0;
+        if (speed > 10)
+        {
+            speed = 10;
+        }
+        else if (speed < 0)
+        {
+            speed = 0;
+        }
 
-        if (timer < 0) timer = 0;
-        if (timer != 0) limit += Time.deltaTime;
-        else limit = 0;
+        if (timer < 0)
+        {
+            timer = 0;
+        }
+        if (timer != 0)
+        {
+            limit += Time.deltaTime;
+        }
+        else
+        {
+            limit = 0;
+        }
 
         if (limit <= timer)
+        {
             transform.Translate(move.x * -Time.deltaTime * speed, 0f, move.y * -Time.deltaTime * speed);
+        }
 
-        else if (timer + 1f <= limit) limit = 0; 
+        else if (timer + 1f <= limit)
+        {
+            limit = 0;
+        }
 
-        if(Math.Abs(transform.position.x) > max.x || Math.Abs(transform.position.z) > max.y)
+        if (Math.Abs(transform.position.x) > max.x || Math.Abs(transform.position.z) > max.y)
+        {
             transform.position = new Vector3(-pos0.x, 0.501f, -pos0.y);
+        }
     }
 }
